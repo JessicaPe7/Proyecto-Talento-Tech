@@ -1,0 +1,14 @@
+@font-face{
+    font-family: juniory;
+    src:url(./fuentes/Juniory.ttf);
+}
+
+@font-face {
+    font-family: helvetica2;
+    src: url(./fuentes/Helvetica.ttf);
+}
+
+@font-face {
+    font-family: helvetica3;
+    src: url(./fuentes/Helvetica-Bold.ttf);
+}
