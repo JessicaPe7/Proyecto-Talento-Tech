@@ -64,14 +64,14 @@ li{
 }
 .barra1{
     display: flex;
-    align-items: flex-end;
-    
+    align-items: center;
+    max-width: 82%;
 }
 
 
 .navegador{
     color: black;
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-decoration: none;
     font-family: helvetica;
     font-weight: 700;
@@ -114,6 +114,7 @@ li{
 .textop{
     color:white;
     font-family: "helvetica";
+    text-align: center;
 
 }
 .contenedor-ico{
@@ -140,6 +141,7 @@ li{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    max-width: 100%;
 }
 .articulo{
     display: flex;
@@ -148,17 +150,18 @@ li{
     justify-content: space-around;
     border: solid black 1px;
     border-radius: 5%;
-
-    margin: 1rem;
-    padding: 1rem;
+    margin: 1%;
+    padding: 1%;
+    max-width: 45%;
 }
 .producto-img{
-    width: 10rem;
-    height: 10rem;
+    width: 75%;
+    height: 75%;
 }
 .articulo-nombre{
     font-family: helvetica;
     font-size: 1.3rem;
+    text-align: center;
 }
 .desc-articulo{
     font-family: helvetica;
