@@ -28,6 +28,19 @@ main{
 .scrol{
     scroll-margin-top: 4.5rem;
 }
+.volver img{
+    width: 3rem;
+    height: 3rem;
+}
+.volver{
+    position: fixed;
+    z-index: 1000;
+    border-radius: 3.5rem;
+    background-color: rgb(255, 131, 67);
+    top: 90%;
+    left: 90%;
+    cursor:pointer;
+}
 /**********************HEADER***********************************HEADER**************************************/
 .pres{
     max-width: 100%;
@@ -37,6 +50,7 @@ main{
     align-items: flex-end;
     background-color: rgb(255, 131, 67);
     padding-top: 0;
+
 }
 
 .logo1{
@@ -61,7 +75,7 @@ li{
     max-width: 100%;
     display: flex;
     justify-content: flex-end;
-    background-color: rgb(255, 131, 67); 
+    background-color: rgb(255, 131, 67);
 }
 
 .barra1{
@@ -140,6 +154,9 @@ li{
     font-size: 2rem;
     color:white;
     background-color: rgb(255, 131, 67);
+    position: -webkit-sticky;
+    position: sticky;
+    top: -1px;
 }
 .sec2{
     display: flex;
@@ -291,10 +308,15 @@ li{
     .articulo{
         max-width: 10rem;
     }
+    .volver{
+        left: 87%;
+        top: 90%;
+    }
+
     }
 
 /*TABLET*/
-@media screen and (min-width: 768){
+@media screen and (min-width: 450){
     .sec5 {background-color: white;}
     }
 
@@ -339,6 +361,10 @@ li{
     }
     .desc-articulo{
         font-size: .9rem;
+    }
+    .volver{
+        left: 93vw;
+        top: 91vh;
     }
     }
 
