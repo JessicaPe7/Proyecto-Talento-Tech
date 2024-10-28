@@ -7,14 +7,17 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/fuentes.css">
     <link rel="shortcut icon" href="./img/Logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="pres posicion">
+    <header class="pres">
         <img class="logo1" src="./img/Logo.png" alt="Logo de Pagina">
         <h1 class="tienda">Tu logo en todo</h1>
     </header>
     
-    <nav class="barra posicion" id="inicio">
+    <nav class="barra" id="inicio">
         <ul class="barra1">
             <li><a class="navegador" href="#inicio">Inicio</a></li>
             <li><a class="navegador" href="#productos">Producto</a></li>
@@ -35,8 +38,8 @@
             <h2 class="texto3">MIRA TODOS LOS PRODUCTOS QUE PODES PERSONALIZAR</h2>
             <p class="textop">sticker - gorras - buzos - remeras - vasos - tazas - y mas...</p>
             <div class="contenedor-ico">
-                <a href="https://api.whatsapp.com/send/?phone=5491164468979&text&type=phone_number&app_absent=0" target="_blank"><img class="ico" src="./img/whatsapp-logo-24.png" alt="wpp"></a>
-                <a href="https://www.instagram.com/tinez_ok?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><img class="ico" src="./img/instagram-logo-24.png" alt="ing"></a>
+                <a href="https://api.whatsapp.com/send/?phone=5491164468979&text&type=phone_number&app_absent=0" target="_blank"><img class="ico" src="./img/logo wtpp.png" alt="wpp"></a>
+                <a href="https://www.instagram.com/tinez_ok?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><img class="ico" src="./img/ig.png" alt="ing"></a>
             </div>
 
 
@@ -146,7 +149,9 @@
 
         <h2 class="texto2">contactanos</h2>
         <section class="sec5 scrol" id="contacto">
-
+            <p class="textop">¿En que podemos ayudarte?</p>
+            <p class="textop"> Te Podes comunicar con nosotros de Lunes a Viernes de 9 a 18hs.</p>
+            
             <form class="formulario" action="https://formsubmit.co/je-perez@outlook.com" method="post" target="_self">
                 <div class="formu">
                     <label class="texto-form" for="nombre-completo">Nombre y Apellido:</label>
@@ -160,13 +165,14 @@
                     <label class="texto-form" for="email">E-mail</label>
                     <input type="text" name="email" id="email" required>
                 </div>
-                <div" class="formu">
+                <div" class="formu enviar">
                     <label class="texto-form" for="consulta">Consulta:</label>
                     <textarea name="comentario" rows="10" cols="30" placeholder="Escriba su consulta..." id="consulta"></textarea>
+                    <button class="comprar" type="submit">Enviar</button>
                 </div>
-                <button class="comprar enviar" type="submit">Enviar</button>
+                
             </form>
-
+            
         </section>
 
 
