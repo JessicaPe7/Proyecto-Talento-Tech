@@ -35,7 +35,7 @@ main{
 .volver{
     position: fixed;
     z-index: 1000;
-    border-radius: 3.5rem;
+    border-radius: 100%;
     background-color: rgb(255, 131, 67);
     top: 90%;
     left: 90%;
@@ -189,11 +189,12 @@ li{
 .comprar{
     background-color: orangered;
     color:white;
-    font-size: 1rem;
+    font-size: 1.3rem;
     border-radius: 6rem;
     border: solid 1px white;
     width: 10rem;
     cursor: pointer;
+    
 }
 
 /***************************TRABAJOS HECHOS***********************/
@@ -246,7 +247,7 @@ li{
     height: 10rem;
     justify-items: center;
     align-content: center;
-    justify-self: center;
+
 }
 
 .reseña p{
@@ -294,12 +295,15 @@ li{
 .texto-form{
     font-size: 1.2rem;
     font-family: helvetica;
+    color: white;
+    font-weight: bold;
 }
 .enviar{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
     
 }
 /*CELULAR*/
@@ -309,15 +313,64 @@ li{
         max-width: 10rem;
     }
     .volver{
-        left: 87%;
+        left: 85%;
         top: 90%;
     }
-
+    .formulario{
+        align-items: flex-start;
+    }
+    .enviar{
+        align-items: flex-start;
+    }
+    .formu{
+        width: 18rem;
+        padding: .2rem
+    }
+    .formu input, textarea{
+        width: 18rem;
+    }
+    .formu input{
+        height: 1.5rem;
+    }
     }
 
 /*TABLET*/
-@media screen and (min-width: 450){
-    .sec5 {background-color: white;}
+@media screen and (min-width: 402px){
+    .sec5 {
+        background-image: url(../img/ssp128.jpg);
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        opacity: 0.8;
+    }
+    .p{
+        background-color: rgba(0, 0, 0, 0.432);
+        border-radius: .5rem;
+    }
+
+    .formulario{
+        align-items: flex-start;
+        color:white;
+        font-weight: 300;
+        background-color: rgba(0, 0, 0, 0.432);
+        padding: 10px;
+        border-radius: 2%;
+    }
+
+    .enviar{
+        align-items: flex-start;
+    }
+    .formu{
+        width: 18rem;
+        padding: .2rem
+    }
+    .formu input, textarea{
+        width: 18rem;
+    }
+    .formu input{
+        height: 1.5rem;
+    }
     }
 
 /*COMPUTADORA*/
