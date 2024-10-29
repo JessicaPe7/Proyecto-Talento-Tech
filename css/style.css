@@ -154,9 +154,9 @@ li{
     font-size: 2rem;
     color:white;
     background-color: rgb(255, 131, 67);
-    position: -webkit-sticky;
     position: sticky;
-    top: -1px;
+    position:-webkit-sticky;
+    top: -2px;
 }
 .sec2{
     display: flex;
@@ -199,7 +199,7 @@ li{
 
 /***************************TRABAJOS HECHOS***********************/
 
-/*
+/* deje para mas adelante hacer un carrusel con las imagenes de trabajs hechos 
 
 .sec3{
     width: 90%;
@@ -323,11 +323,11 @@ li{
         align-items: flex-start;
     }
     .formu{
-        width: 18rem;
+        width: 100%;
         padding: .2rem
     }
     .formu input, textarea{
-        width: 18rem;
+        width: 100%;
     }
     .formu input{
         height: 1.5rem;
