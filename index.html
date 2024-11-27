@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="pres fijo" id="volver">
+    <header class="pres fijo" >
         <img class="logo1" src="./img/Logo.png" alt="Logo de Pagina">
         <h1 class="tienda">Tu logo en todo</h1>
     </header>
@@ -30,11 +30,11 @@
         
     </nav>
 
-    <main>
+    <main id="volver">
         <div class="volver">
             <a  href="#volver"><img src="./img/arrow-small-up.png" alt="volver aariba"></a>
         </div>
-            <section class="sec1">
+            <section class="sec1" >
             <div class="imagen-logo">
                 <img class="logo" src="./img/m tinez nuevo logo (1).png" alt="Logo tinez grande">
             </div>
@@ -98,8 +98,8 @@
             </div>
         </section>
 
-
-        <h2 class="texto2">Trabajos hechos</h2>
+        
+        <h2 class="texto2 tsec3">Trabajos hechos</h2>
         <section class="sec3">
             
             <img src="./img/air.jpg" alt="imagen producto">
@@ -121,8 +121,9 @@
             <img src="./img/Sagras.jpeg" alt="trabajo hecho">
             <img src="./img/tortu.jpeg" alt="trabajo hecho">
         
-        </section>
-
+        </section> 
+    
+        
         <h2 class="texto2">Reseñas</h2>
         <section class="sec4 scrol" id="reseña">
             <div class="reseña">
@@ -159,7 +160,7 @@
                 </div>
                 <div class="formu">
                     <label class="texto-form" for="tel">Celular</label>
-                    <input type="tel" name="telefono" id="tel" required>
+                    <input type="tel" name="telefono" id="tel" required max="10">
                 </div>
                 <div class="formu">
                     <label class="texto-form" for="email">E-mail</label>
@@ -184,6 +185,7 @@
 
     </main>
 
+    <script src="./JavaScript/script.js"></script>
     <footer>Copyright 2024 - Buenos Aires, Argentina.</footer>
-</body>
+    </body>
 </html>
