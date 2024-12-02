@@ -39,7 +39,7 @@ main{
     position: fixed;
     z-index: 1000;
     border-radius: 100%;
-    background-color: rgba(108, 67, 255, 0.616);
+    background-color: rgba(0, 128, 0, 0.719);
     top: 90%;
     left: 90%;
     cursor:pointer;
@@ -156,10 +156,9 @@ li{
     font-family: Helvetica;
     font-size: 2rem;
     color:white;
-    background-color: rgb(255, 131, 67);
-/*  position: sticky;
-    position:-webkit-sticky;
-    top: -2px; */
+
+    background-color: rgba(0, 0, 255, 0.432);
+
 }
 .sec2{
     display: flex;
@@ -172,8 +171,9 @@ li{
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    border: solid orangered 1px;
+    border: solid rgba(0, 0, 255, 0.432) 1px;
     border-radius: 5%;
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
     margin: 1%;
     padding: 2%;
     max-width: 15rem;
@@ -209,12 +209,13 @@ li{
     width: 100%;
     height: 430px;
     background-color: rgba(0, 0, 255, 0.171);
+    align-items: center;
 }
 
 
 .sec3 img{
     width: 0px;
-    height: auto;
+    height: 410px;
     flex-grow: 1;
     object-fit: cover;
     opacity: .8;
@@ -225,6 +226,7 @@ li{
     width: 300px;
     opacity: 1;
     filter: contrast(120%);
+    box-shadow: 10px 1px 10px 7px rgb(0, 0, 0);
 }
 
 /********RESEÑA****************************************************************/
