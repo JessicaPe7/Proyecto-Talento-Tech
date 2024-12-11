@@ -22,15 +22,19 @@
                 <li><a class="navegador" href="#reseña">Reseña</a></li>
                 <li><a class="navegador" href="#contacto">Contacto</a></li>                
             </ul>
+            
         </nav>
-        <a href=""><img src="./img/cart-alt-regular-24.png" class="ico2" alt=""></a>
+        <a href="carrito.html" class="ord"><img  src="./img/cart-alt-regular-24.png" class="ico2" alt=""></a>
+        
     </header>
 
     <main id="volver">
+
         <div class="volver">
             <a  href="#volver"><img src="./img/arrow-small-up.png" alt="volver aariba"></a>
         </div>
-            <section class="sec1" >
+
+        <section class="sec1" >
             <div class="imagen-logo">
                 <img class="logo" src="./img/m tinez nuevo logo (1).png" alt="Logo tinez grande">
             </div>
@@ -41,65 +45,11 @@
                 <a href="https://api.whatsapp.com/send/?phone=5491164468979&text&type=phone_number&app_absent=0" target="_blank"><img class="ico" src="./img/logo wtpp.png" alt="wpp"></a>
                 <a href="https://www.instagram.com/tinez_ok?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><img class="ico" src="./img/ig.png" alt="ing"></a>
             </div>
-
-
         </section>
 
         <h2 class="texto2">Productos</h2>
-        <section class="sec2 scrol" id="productos">
-
-            <div class="articulo">
-                <img class="producto-img" src="./img/vinilo blanco.jpeg" alt="vinilo blanco">
-                <h3 class="articulo-nombre">Vinilo Blanco</h3>
-                <p class="desc-articulo">Sticker m<sup>2</sup></p>
-                <p>$31.182.-</p>
-                <button class="comprar">Comprar</button>
-            </div>
-            <div class="articulo">
-                <img class="producto-img" src="./img/vinilo tornasolado.jpeg" alt="vinilo tornasolado">
-                <h3 class="articulo-nombre">Vinilo Tornasolado</h3>
-                <p class="desc-articulo">Sticker m<sup>2</sup></p>
-                <p>$43.455.-</p>
-                <button class="comprar">Comprar</button>
-            </div>
-            <div class="articulo">
-                <img class="producto-img" src="./img/vinilo gliter.jpeg" alt="vinilo glitter">
-                <h3 class="articulo-nombre">Vinilo Glitter</h3>
-                <p class="desc-articulo">Sticker m<sup>2</sup></p>
-                <p>$43.455.-</p>
-                <button class="comprar">Comprar</button>
-            </div>
-            <div class="articulo">
-                <img class="producto-img" src="./img/vinio transparente.jpeg" alt="vinilo clear">
-                <h3 class="articulo-nombre">Vinilo Clear</h3>
-                <p class="desc-articulo">Sticker m<sup>2</sup></p>
-                <p>$30.545.-</p>
-                <button class="comprar">Comprar</button>
-            </div>
-
-
-            <div class="articulo">
-                <img class="producto-img" src="./img/bolsa friselina2.jpg" alt="bolsa friselina">
-                <h3 class="articulo-nombre">Bolsa de friselina x50und.</h3>
-                <p class="desc-articulo">Bolsa de friselina con tu logo...</p>
-                <p>$31.182.-</p>
-                <button class="comprar">Comprar</button>
-            </div>
-
-            <div class="articulo">
-                <img class="producto-img" src="./img/botella america.jpeg" alt="botella america">
-                <h3 class="articulo-nombre">Botella America</h3>
-                <p class="desc-articulo">Botella con tu logo...</p>
-                <p>$31.182.-</p>
-                <button class="comprar">Comprar</button>
-            </div>
-            <div class="articulo">
-                <img class="producto-img" src="./img/botella acero.jpeg" alt="botella acero">
-                <h3 class="articulo-nombre">Botella de acero x50und.</h3>
-                <p class="desc-articulo">Botella con tu logo...</p>
-                <p>$31.182.-</p>
-                <button class="comprar">Comprar</button>
-            </div>
+        <section class="productos sec2 scrol ">
+            
         </section>
 
         
@@ -109,7 +59,6 @@
             <img src="./img/air.jpg" alt="imagen producto">
             <img src="./img/Galletita.jpg" alt="imagen producto">
             <img src="./img/Grow.jpg" alt="imagen producto">
-            <img src="./img/Lyons.jpg" alt="imagen producto">
             <img src="./img/meteoro seed.jpg" alt="imagen producto">
             <img src="./img/Puchito.jpg" alt="imagen producto">
             <img src="./img/semilla libre.jpg" alt="imagen producto">
@@ -119,8 +68,6 @@
             <img src="./img/luz.jpeg" alt="trabajo hecho">
             <img src="./img/mamba 1.jpeg" alt="trabajo hecho">
             <img src="./img/tiantiny.jpeg" alt="trabajo hecho">
-            <img src="./img/mamba 2.jpeg" alt="trabajo hecho">
-            <img src="./img/lyons 2.jpeg" alt="trabajo hecho">
             <img src="./img/pastilla.jpeg" alt="trabajo hecho">
             <img src="./img/Sagras.jpeg" alt="trabajo hecho">
             <img src="./img/tortu.jpeg" alt="trabajo hecho">
@@ -157,18 +104,21 @@
             <p class="textop p">¿En que podemos ayudarte?</p>
             <p class="textop p"> Te Podes comunicar con nosotros de Lunes a Viernes de 9 a 18hs.</p>
             
-            <form class="formulario" action="https://formsubmit.co/je-perez@outlook.com" method="post" target="_self">
+            <form class="formulario" id="formu" action="https://formsubmit.co/je-perez@outlook.com" method="post" target="_self">
                 <div class="formu">
                     <label class="texto-form" for="nombre-completo">Nombre y Apellido:</label>
-                    <input  type="text" name="Nombre" id="nombre-completo" required>
+                    <input  type="text" name="Nombre" id="nombre-completo">
+                    <p id="error1"></p>
                 </div>
                 <div class="formu">
                     <label class="texto-form" for="tel">Celular</label>
-                    <input type="tel" name="telefono" id="tel" required max="10">
+                    <input type="tel" name="telefono" id="tel">
+                    <p id="error2"></p>
                 </div>
                 <div class="formu">
                     <label class="texto-form" for="email">E-mail</label>
-                    <input type="text" name="email" id="email" required>
+                    <input type="text" name="e-mail" id="email">
+                    <p id="error3"></p>
                 </div>
                 <div" class="formu enviar">
                     <label class="texto-form" for="consulta">Consulta:</label>
@@ -177,7 +127,7 @@
                 </div>
                 
             </form>
-            
+            <p id="correcto"></p>
         </section>
 
 
@@ -190,6 +140,7 @@
     </main>
 
     <script src="./JavaScript/script.js"></script>
+    <script src="./JavaScript/productos.js"></script>
     <footer>Copyright 2024 - Buenos Aires, Argentina.</footer>
     </body>
 </html>
