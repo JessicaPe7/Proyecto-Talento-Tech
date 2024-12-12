@@ -58,7 +58,7 @@ const listadoProductos = document.querySelector('.productos');
 productos.forEach(producto => {
     const html = `
         <div class="articulo" data-id="${producto.id}">  
-            <img src="../img/${producto.imagen}" class="producto-img" alt="${producto.nombre}">
+            <img src="./img/${producto.imagen}" class="producto-img" alt="${producto.nombre}">
             <h3 class="articulo-nombre">${producto.nombre}</h3>
             <p class="desc-articulo" id="info1"> ${producto.descripcion}</p>
             <p>$ ${producto.precio}</p>
