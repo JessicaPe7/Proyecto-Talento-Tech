@@ -3,13 +3,13 @@ let productos = [];
 
 const cargarProductos = async () => {
     try {
-        const response = await fetch("../posts.json");
+        const response = await fetch("./posts.json");
         productos = await response.json();
 
         //console.log(productos);
         mostrarProductos();
     } catch (error) {
-        console.error(error);
+        console.log(error);
     }
 };
 
