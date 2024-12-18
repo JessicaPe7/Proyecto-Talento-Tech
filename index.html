@@ -13,18 +13,24 @@
 </head>
 <body>
     <header class="pres fijo" >
-        <img class="logo1" src="./img/Logo.png" alt="Logo de Pagina">
+        
 
         <nav class="barra" >
+            <input type="checkbox" id="chek">
+            <label for="chek" class="chekbtn">
+                <img src="./img/menu-burger.png" class="ico2"></img>
+            </label>
+            <img class="logo1" src="./img/Logo.png" alt="Logo de Pagina">
             <ul class="barra1">
-                <li><a class="navegador" href="#volver">Inicio</a></li>
+                <li><a class="navegador activado" href="#volver">Inicio</a></li>
                 <li><a class="navegador" href="#productos">Producto</a></li>
                 <li><a class="navegador" href="#reseña">Reseña</a></li>
                 <li><a class="navegador" href="#contacto">Contacto</a></li>                
             </ul>
             
         </nav>
-            <p id="cantidadart"></p>
+            
+            <p class="cantidad-carrito" id="cantidadart"></p>
             <a href="carrito.html" class="ord"><img  src="./img/cart-alt-regular-24.png" class="ico2" alt=""></a>
             
     </header>
@@ -115,22 +121,22 @@
             <form class="formulario" id="formu" action="https://formsubmit.co/je-perez@outlook.com" method="post" target="_self">
                 <div class="formu">
                     <label class="texto-form" for="nombre-completo">Nombre y Apellido:</label>
-                    <input  type="text" name="Nombre" id="nombre-completo">
+                    <input  type="text" name="Nombre" id="nombre-completo" class="forma">
                     <p id="error1"></p>
                 </div>
                 <div class="formu">
                     <label class="texto-form" for="tel">Celular</label>
-                    <input type="tel" name="telefono" id="tel">
+                    <input type="tel" name="telefono" id="tel" class="forma">
                     <p id="error2"></p>
                 </div>
                 <div class="formu">
                     <label class="texto-form" for="email">E-mail</label>
-                    <input type="text" name="e-mail" id="email">
+                    <input type="text" name="e-mail" id="email" class="forma">
                     <p id="error3"></p>
                 </div>
                 <div" class="formu enviar">
                     <label class="texto-form" for="consulta">Consulta:</label>
-                    <textarea name="comentario" rows="10" cols="30" placeholder="Escriba su consulta..." id="consulta"></textarea>
+                    <textarea name="comentario" rows="10" cols="30" placeholder="Escriba su consulta..." id="consulta" class="forma"></textarea>
                     <button class="comprar" type="submit">Enviar</button>
                 </div>
                 

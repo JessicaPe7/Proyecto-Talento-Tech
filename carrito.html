@@ -13,18 +13,25 @@
 </head>
 <body>
     <header class="pres fijo" >
-        <img class="logo1" src="./img/Logo.png" alt="Logo de Pagina">
-
+    
         <nav class="barra" >
+            <input type="checkbox" id="chek">
+            <label for="chek" class="chekbtn">
+                <img src="./img/menu-burger.png" class="ico2"></img>
+            </label>
+            <img class="logo1" src="./img/Logo.png" alt="Logo de Pagina">
             <ul class="barra1">
-                <li><a class="navegador" href="./index.html#volver">Inicio</a></li>
-                <li><a class="navegador" href="./index.html#productos">Producto</a></li>
-                <li><a class="navegador" href="./index.html#reseña">Reseña</a></li>
-                <li><a class="navegador" href="./index.html#contacto">Contacto</a></li>                
+                <li><a class="navegador activado" href="#volver">Inicio</a></li>
+                <li><a class="navegador" href="#productos">Producto</a></li>
+                <li><a class="navegador" href="#reseña">Reseña</a></li>
+                <li><a class="navegador" href="#contacto">Contacto</a></li>                
             </ul>
+            
         </nav>
-        <p id="cantidadart"></p>
-        <a><img src="./img/cart-alt-regular-24.png" class="ico2" alt=""></a>
+            
+            <p class="cantidad-carrito" id="cantidadart"></p>
+            <a href="carrito.html" class="ord"><img  src="./img/cart-alt-regular-24.png" class="ico2" alt=""></a>
+            
     </header>
 
     <main id="volver">
@@ -43,10 +50,12 @@
         <section class="carrito">
             <h1 class="texto2">Carrito de compras</h1>
             <table>
-                <thead>
+                <thead class="tabletext">
                     <tr>
-                        <th>Nombre</th>
+                        <th>Producto</th>
+                        <th></th>
                         <th>Cantidad</th>
+                        <th></th>
                         <th>Precio</th>
                         <th>Subtotal</th>
                         <th></th>

@@ -9,7 +9,7 @@ items.innerHTML = "";
 carrito.forEach((item) => {
     const html = `
         <tr data-id="${item.id}">
-            <td>${item.nombre}</td>
+            <td >${item.nombre}</td>
             <td><button> - </button></td>
             <td>${item.cantidad}</td>
             <td><button> + </button></td>
