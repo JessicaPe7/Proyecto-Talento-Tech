@@ -65,6 +65,7 @@ const cargarProductos = async () => {
                 }
 
                 localStorage.setItem("carrito", JSON.stringify(carrito));
+                
             }
         });
         //console.log(productos);

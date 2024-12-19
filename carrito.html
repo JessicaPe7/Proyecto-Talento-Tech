@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="body-carrito">
     <header class="pres fijo" >
     
         <nav class="barra" >
@@ -21,10 +21,10 @@
             </label>
             <img class="logo1" src="./img/Logo.png" alt="Logo de Pagina">
             <ul class="barra1">
-                <li><a class="navegador activado" href="#volver">Inicio</a></li>
-                <li><a class="navegador" href="#productos">Producto</a></li>
-                <li><a class="navegador" href="#reseña">Reseña</a></li>
-                <li><a class="navegador" href="#contacto">Contacto</a></li>                
+                <li><a class="navegador activado" href="index.html#volver">Inicio</a></li>
+                <li><a class="navegador" href="index.html#productos">Producto</a></li>
+                <li><a class="navegador" href="index.html#reseña">Reseña</a></li>
+                <li><a class="navegador" href="index.html#contacto">Contacto</a></li>                
             </ul>
             
         </nav>
@@ -39,39 +39,27 @@
         <div class="volver">
             <a  href="#volver"><img src="./img/arrow-small-up.png" alt="volver aariba"></a>
         </div>
-            <section class="sec1" >
+        <section class="sec1" >
             <div class="imagen-logo">
                 <img class="logo" src="./img/m tinez nuevo logo (1).png" alt="Logo tinez grande">
             </div>
-
         </section>
 
+        <h1 class="texto2">Carrito de compras</h1>
 
-        <section class="carrito">
-            <h1 class="texto2">Carrito de compras</h1>
-            <table>
-                <thead class="tabletext">
-                    <tr>
-                        <th>Producto</th>
-                        <th></th>
-                        <th>Cantidad</th>
-                        <th></th>
-                        <th>Precio</th>
-                        <th>Subtotal</th>
-                        <th></th>
-                    </tr>
-                </thead>
-                <tbody class="items">
-                    <tr data-id="">
-                        <td></td>
-                        <td><button></button></td>
-                        <td></td>
-                        <td><button></button></td>
-                    </tr>
-                </tbody>
-            </table>
+
+        <section class="layout carrito letra" id="titulares">
+            <div>Producto</div>
+            <div>Cantidad</div>
+            <div>Precio</div>
+            <div>Subtotal</div>
         </section>
         
+        <section class="items layout2" >
+            <ul>
+                <li></li>
+            </ul>
+        </section>
 
     </main>
 

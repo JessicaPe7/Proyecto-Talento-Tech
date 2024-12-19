@@ -14,18 +14,22 @@
 <body>
     <header class="pres fijo" >
         
+        
 
-        <nav class="barra" >
+        <nav class="barra nav" id="nav" >
+            
             <input type="checkbox" id="chek">
             <label for="chek" class="chekbtn">
-                <img src="./img/menu-burger.png" class="ico2"></img>
-            </label>
+                <img src="./img/menu-burger.png" class="ico2" id="abir"></img>
+            </label> 
+
             <img class="logo1" src="./img/Logo.png" alt="Logo de Pagina">
+
             <ul class="barra1">
-                <li><a class="navegador activado" href="#volver">Inicio</a></li>
-                <li><a class="navegador" href="#productos">Producto</a></li>
-                <li><a class="navegador" href="#reseña">Reseña</a></li>
-                <li><a class="navegador" href="#contacto">Contacto</a></li>                
+                <li class="cerrar"><a class="navegador activado" href="#volver">Inicio</a></li>
+                <li class="cerrar"><a class="navegador" href="#productos">Producto</a></li>
+                <li><a class="navegador cerrar" href="#reseña">Reseña</a></li>
+                <li><a class="navegador cerrar" href="#contacto">Contacto</a></li>                
             </ul>
             
         </nav>
@@ -54,7 +58,7 @@
             </div>
         </section>
 
-        <h2 class="texto2">Productos</h2>
+        <h2 class="texto2" id="productos">Productos</h2>
         <section class="productos sec2 scrol ">
 
             <div data-id="">  

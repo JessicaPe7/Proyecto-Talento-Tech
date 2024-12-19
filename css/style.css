@@ -214,6 +214,12 @@ li{
     
 }
 
+.comprar:focus{
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in-out;
+}
+
+
 .masinf{
     background-color: rgba(0, 0, 255, 0.432);
     color:white;
@@ -382,6 +388,8 @@ li{
         left: 0;
     }
 
+    
+
     ul li a::after{
         box-sizing: border-box;
     }
@@ -389,6 +397,13 @@ li{
         display: block;
         padding-left: 8%;
     }
+
+    /*viendo si funciona sacar el nav al hacer clic en algun li*/
+    .visible {
+        left: -100%;
+    }
+
+
     .sec5 {background-color: rgb(255, 68, 0);
         margin: 3px;
     }
@@ -422,8 +437,7 @@ li{
     .sec3, .tsec3{
         display: none;
     }
-
-    }
+}
 
 /*TABLET*/
 @media screen and (min-width: 480px) and (max-width: 768px){
@@ -536,19 +550,63 @@ li{
 }
 
 /**********************CARRITO***************************************************/
-table{
-    border:#2c3e50 solid 3px;
+
+.layout {
     width: 100%;
-}
-.tabletext{
-    font-family: Helvetica;
-    font-size: 2.5rem;
-    color:rgba(0, 0, 255, 0.432);
-    border-bottom: black solid 3px;
+    display: grid;
+    grid-template-rows: repeat( 30%);
+    grid-template-columns: repeat(5, 20%);
+    gap: 20px;
+    
 }
 
-tr{
+.letra{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.5rem;
-    
+    color: rgba(0, 0, 255, 0.432);
+    background-color: rgba(0, 0, 255, 0.137);
+    font-size: 1.8rem;
+    padding-right: .3rem;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+}
+
+.layout2{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 5px;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.items-carrito {
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(5, 20%);
+    gap: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    border-bottom: black solid 2px;
+    padding: .5rem 0;
+}
+
+.items-carrito:hover{
+    background-color: rgba(0, 0, 255, 0.137);
+}
+
+
+.item-especial{
+    width: 80%;
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: repeat(3, 33%);
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
 }
