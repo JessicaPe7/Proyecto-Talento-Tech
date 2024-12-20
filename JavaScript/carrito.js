@@ -26,9 +26,9 @@ carrito.forEach((item) => {
             </div>
 
             <div class="item-especial" id="agregar">
-                <input type="image" src="../img/minus.png" class="menos ico2">
+                <input type="image" src="img/minus.png" alt="menos" class="menos ico2">
                 ${item.cantidad}
-                <input type="image" src="../img/plus.png" class="mas ico2">
+                <input type="image" src="img/plus.png" alt="mas" class="mas ico2">
             </div>
 
             <div class="info-precio">
