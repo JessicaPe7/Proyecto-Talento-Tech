@@ -4,7 +4,7 @@
         "nombre":"Vinilo blanco",
         "imagen":"vinilo-blanco.jpeg",
         "descripcion":"Plancha de m2 de sticker en vinilo blanco",
-        "precio":31.182,
+        "precio":31182,
         "stock":10
     },
     {
@@ -12,14 +12,14 @@
         "nombre":"Vinilo tornasolado",
         "imagen":"vinilo tornasolado.jpeg",
         "descripcion":"Plancha de m2 de sticker en vinilo tornasolado",
-        "precio":43.455,
+        "precio":43455,
         "stock":10
     },
     {
         "id":3,"nombre":"Vinilo glitter",
         "imagen":"vinilo gliter.jpeg",
         "descripcion":"Plancha de m2 de sticker en vinilo glitter",
-        "precio":43.455,
+        "precio":43455,
         "stock":10
     },
     {
@@ -27,7 +27,7 @@
         "nombre":"Vinilo clear",
         "imagen":"vinio transparente.jpeg",
         "descripcion":"Plancha de m2 de sticker en vinilo clear",
-        "precio":30.545,
+        "precio":30545,
         "stock":10
     },
     {
@@ -35,7 +35,7 @@
         "nombre":"Bolsa frizelina",
         "imagen":"bolsa friselina2.jpg",
         "descripcion":"Bolsa frizelina estampada 50 un. ",
-        "precio":31.182,
+        "precio":31182,
         "stock":10
     },
     {
@@ -43,7 +43,7 @@
         "nombre":"Botella America",
         "imagen":"botella america.jpeg",
         "descripcion":"Botella estampada con tu logo 50 uni.",
-        "precio":31.182,
+        "precio":31182,
         "stock":10
     },
     {
@@ -51,7 +51,7 @@
         "nombre":"Botella de acero",
         "imagen":"botella acero.jpeg",
         "descripcion":"Botella estampada con tu logo 50 uni.",
-        "precio":31.182,
+        "precio":31182,
         "stock":10
     }
 ]
