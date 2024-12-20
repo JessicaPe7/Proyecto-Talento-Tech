@@ -5,7 +5,7 @@ console.log("tiene:", carrito);
 if(carrito.length == 0){
     const aviso = document.querySelector(".p");
     const p = `
-        <h2 class="texto2">El carrito esta vacio</h2>
+        <h2 class="texto2 p">El carrito esta vacio</h2>
     `;
     console.log(aviso);
     console.log(p);
@@ -25,8 +25,10 @@ carrito.forEach((item) => {
                 <input class="elim ico2" type="image" src="img/trash.png" alt="eliminar">
             </div>
 
-            <div class="item-especial">
-                <input type="image" src="/img/plus.png" class="ico2">${item.cantidad}<input type="image" src="/img/minus.png" class="ico2">
+            <div class="item-especial" id="agregar">
+                <input type="image" src="/img/minus.png" class="menos ico2">
+                ${item.cantidad}
+                <input type="image" src="/img/plus.png" class="mas ico2">
             </div>
 
             <div class="info-precio">
@@ -40,7 +42,11 @@ carrito.forEach((item) => {
     `;
     items.innerHTML += html;
     
+    
 });
+
+
+
 
 //calcula el total
 let totalcompra = 0;
@@ -57,11 +63,9 @@ const final2 = document.getElementById('total-final').innerHTML += totalcompra
 
 
 
-//elimina el producto
+//producto a la basura
 document.addEventListener('click', (event) => {
     
-    console.log(event.target);
-
     if (event.target.classList.contains("elim")){
 
         const id = event.target.closest('article').dataset.id;

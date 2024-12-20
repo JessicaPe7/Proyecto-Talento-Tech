@@ -1,18 +1,6 @@
 //CANTIDAD DE PRODUCTOS EN CARRITO
 
 
-/* fetch('url_del_servidor')
-  .then(response => response.text())
-  .then(data => {
-    document.getElementById('elemento').innerHTML = data;
-  });fetch('url_del_servidor')
-  .then(response => response.text())
-  .then(data => {
-    document.getElementById('elemento').innerHTML = data;
-  });
- */
-
-
 carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
 let contador = 0;

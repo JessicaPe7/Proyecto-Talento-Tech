@@ -632,3 +632,10 @@ li{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.1rem;
 }
+
+.p{
+    background-color: rgba(255, 0, 0, 0.322);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
