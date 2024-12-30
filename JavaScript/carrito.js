@@ -27,7 +27,7 @@ carrito.forEach((item) => {
 
             <div class="item-especial" id="agregar">
                 <input type="image" src="img/minus.png" alt="menos" class="menos ico2">
-                ${item.cantidad}
+                <p id="cant">${item.cantidad}</p>
                 <input type="image" src="img/plus.png" alt="mas" class="mas ico2">
             </div>
 
@@ -64,23 +64,73 @@ const final2 = document.getElementById('total-final').innerHTML += totalcompra
 
 
 //producto a la basura
-document.addEventListener('click', (event) => {
-    
-    if (event.target.classList.contains("elim")){
 
-        const id = event.target.closest('article').dataset.id;
+    document.addEventListener('click', (event) => {
+        
+        if (event.target.classList.contains("elim")){
 
-        const elemento2 = carrito.findIndex((item) => item.id == id);
+            const id = event.target.closest('article').dataset.id;
+
+            const elemento2 = carrito.findIndex((item) => item.id == id);
             
-        if (elemento2 !== -1) {
-            carrito.splice(elemento2, 1);            
+            if (elemento2 !== -1) {
+                carrito.splice(elemento2, 1);            
+            }
+            console.log(carrito);    
+            window.location.href = window.location.href;
+            
         }
-        console.log(carrito);    
-        location.reload();
+        localStorage.setItem("carrito", JSON.stringify(carrito));
+        
+    }) 
+
+
+
+//AGREGAR UN PRODUCTO MAS +
+document.addEventListener('click', (event) => {
+    if(event.target.classList.contains("mas")){
+        console.log("entro");
+
+        const idboton = event.target.closest('article').dataset.id;
+        //console.log(idboton);
+
+        const indiceb = carrito.findIndex((item) => item.id == idboton);
+        //console.log(indiceb);
+
+        const mas = carrito[indiceb];
+        //console.log("cantidad que tiene cant", mas);
+        mas.cantidad++;
+        
+
+        localStorage.setItem("carrito", JSON.stringify(carrito));
+        window.location.href = window.location.href;
+        //console.log("tiene:", carrito);
     }
-    localStorage.setItem("carrito", JSON.stringify(carrito));
-    
-    
-}) 
+})
 
 
+//SACAR UN PRODUCTO - 
+document.addEventListener('click', (event) => {
+    if(event.target.classList.contains("menos")){
+        console.log("entro");
+
+        const idbotonm = event.target.closest('article').dataset.id;
+        console.log(idbotonm);
+
+        const indicebm = carrito.findIndex((item) => item.id == idbotonm);
+        console.log(indicebm);
+
+        if(carrito[indicebm].cantidad != 1){
+            const menos = carrito[indicebm];
+            console.log("cantidad que tiene cant", menos);
+            menos.cantidad--;
+        }else{
+            carrito.splice(indicebm, 1); 
+        }
+        
+        
+        localStorage.setItem("carrito", JSON.stringify(carrito));
+        window.location.href = window.location.href;
+        //console.log("tiene:", carrito);
+    }
+})

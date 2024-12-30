@@ -11,8 +11,10 @@ for (let i = 0; i < carrito.length; i++) {
     //console.log("el valor contenido es: ", cuanto);
     contador = contador + cuanto;
 
+
 }
 
 //console.log("la cantidad de pordictos en carrito es: ",contador);
 
 const artcantidad = document.getElementById('cantidadart').innerHTML += contador;
+
