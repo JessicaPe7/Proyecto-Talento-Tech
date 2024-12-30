@@ -58,7 +58,7 @@ const cargarProductos = async () => {
                         cantidad: 1,
                     };
                     carrito.push(producto);
-                    window.location.href = window.location.href;
+                    
                 } else{
                     const prod = carrito[indice];
                     console.log(prod);
@@ -66,7 +66,7 @@ const cargarProductos = async () => {
                 }
 
                 localStorage.setItem("carrito", JSON.stringify(carrito));
-                
+                location.reload();
                 
             }
         });
