@@ -112,25 +112,20 @@ document.addEventListener('click', (event) => {
 //SACAR UN PRODUCTO - 
 document.addEventListener('click', (event) => {
     if(event.target.classList.contains("menos")){
-        console.log("entro");
 
         const idbotonm = event.target.closest('article').dataset.id;
-        console.log(idbotonm);
 
         const indicebm = carrito.findIndex((item) => item.id == idbotonm);
-        console.log(indicebm);
 
         if(carrito[indicebm].cantidad != 1){
             const menos = carrito[indicebm];
-            console.log("cantidad que tiene cant", menos);
             menos.cantidad--;
         }else{
             carrito.splice(indicebm, 1); 
         }
         
-        
         localStorage.setItem("carrito", JSON.stringify(carrito));
+        //location.reload();
         window.location.href = window.location.href;
-        //console.log("tiene:", carrito);
     }
 })

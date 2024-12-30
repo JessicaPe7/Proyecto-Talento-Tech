@@ -53,10 +53,3 @@ formulario.addEventListener("submit", (event) =>{
     }
 })
 
-//viendo si funciona sacar el nav al hacer clic
-const nav = document.querySelector(".barra1");
-const cerrar = document.querySelector(".cerrar");
-console.log(cerrar);
-cerrar.addEventListener("click", () => {
-    nav.classList.add(".visible");
-})
